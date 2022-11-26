@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Raleway&display=swap");
+.btn-master, .btn-first, .btn-second {
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+@media (max-width: 575.98px) {
+  .btn-master, .btn-first, .btn-second {
+    padding: 10px 20px;
+  }
+}
+
+.btn-first {
+  background-color: #8EA73E;
+  color: #fff;
+}
+
+.btn-first:hover {
+  background-color: #1A440C;
+  color: #b3b3b3;
+}
+
+.btn-second {
+  border: 2px solid #8EA73E;
+  color: #8EA73E;
+}
+
+.navbar {
+  padding: 20px 0;
+  color: white !important;
+}
+
+.navbar.active {
+  background: #1B1919;
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.07);
+  padding: 20px 0;
+}
+
+.navbar .nav-link {
+  margin-right: 20px;
+  font-weight: 500;
+  color: white !important;
+}
+
+.navbar .nav-link.active {
+  font-weight: 600;
+  color: #1A440C;
+}
+
+.btn-master, .btn-first, .btn-second {
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+@media (max-width: 575.98px) {
+  .btn-master, .btn-first, .btn-second {
+    padding: 10px 20px;
+  }
+}
+
+.btn-first {
+  background-color: #8EA73E;
+  color: #fff;
+}
+
+.btn-first:hover {
+  background-color: #1A440C;
+  color: #b3b3b3;
+}
+
+.btn-second {
+  border: 2px solid #8EA73E;
+  color: #8EA73E;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  -webkit-transition: .3s ease-in-out all;
+  transition: .3s ease-in-out all;
+}
+
+* a:link {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1344px;
+}
+
+.section-margin {
+  margin-top: 180px;
+}
+
+.label-section {
+  font-weight: 700;
+  font-size: 48;
+  color: #1A440C;
+}
+
+.heading-section {
+  font-weight: 700;
+  font-size: 42;
+  color: #1A440C;
+}
+
+@media (max-width: 767.98px) {
+  .heading-section {
+    font-size: 32;
+  }
+}
+
+.subheading-section {
+  font-weight: 400;
+  font-size: 18;
+  color: #1B1919;
+}
+
+@media (max-width: 767.98px) {
+  .subheading-section {
+    font-size: 32;
+  }
+}
+
+.home {
+  background-image: url("hero-bg.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 290px;
+  height: 100vh;
+}
+
+.home .heading-home {
+  font-size: 62px;
+  font-weight: 700;
+  color: #F5FFD6;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home .heading-home {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home .heading-home {
+    font-size: 44px;
+  }
+}
+
+.home .subheading1-home {
+  font-size: 24px;
+  color: #F5FFD6;
+}
+
+@media (max-width: 767.98px) {
+  .home .subheading1-home {
+    font-size: 19px;
+  }
+}
+
+.home .subheading2-home {
+  font-size: 24px;
+  color: white;
+}
+
+@media (max-width: 767.98px) {
+  .home .subheading2-home {
+    font-size: 16px;
+  }
+}
+
+.home .btn-home {
+  margin-top: 80px;
+}
+
+@media (max-width: 767.98px) {
+  .home .btn-home {
+    margin-top: 50px;
+  }
+}
+
+.services .card {
+  border: 2px solid #1A440C;
+}
+
+.services .card:hover {
+  background-color: #F5F5F5;
+}
+
+.services .card-name {
+  font-size: 50px;
+  color: #1A440C;
+}
+
+.awards img {
+  width: 70%;
+}
+
+@media (max-width: 767.98px) {
+  .awards img {
+    width: 60%;
+  }
+}
+
+.footer {
+  background: #1B1919;
+  border-radius: 50px 50px 0px 0px;
+  color: white;
+  padding: 60px 0px;
+}
+
+.footer h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.footer ul {
+  padding: 0;
+  margin-top: 20px;
+}
+
+.footer ul li {
+  margin: 20px 0;
+}
+
+.footer .quote {
+  font-size: 20px;
+}
+
+.footer .credit {
+  font-size: 12px;
+  padding-bottom: 0;
+}
+/*# sourceMappingURL=main.css.map */

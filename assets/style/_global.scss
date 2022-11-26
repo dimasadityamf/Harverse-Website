@@ -1,0 +1,138 @@
+@import "fonts";
+@import "colors";
+@import "button";
+* {
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    transition: .3s ease-in-out all;
+    a:link {
+        text-decoration: none;
+    }
+}
+
+.container {
+    max-width: 1344px;
+}
+
+.section-margin {
+    margin-top: 180px;
+}
+
+.label-section {
+    font-weight: map-get($font-weights, bold);
+    font-size: 48;
+    color: $first-color;
+}
+
+.heading-section {
+    font-weight: map-get($font-weights, bold);
+    font-size: 42;
+    color: $first-color;
+    @include media-breakpoint-down(md) {
+        font-size: 32;
+    }
+}
+
+.subheading-section {
+    font-weight: map-get($font-weights, regular);
+    font-size: 18;
+    color: $black;
+    @include media-breakpoint-down(md) {
+        font-size: 32;
+    }
+}
+
+// HOME CSS
+.home {
+    // background-color: $black;
+    background-image: url("hero-bg.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 290px;
+    height: 100vh;
+    .heading-home {
+        font-size: 62px;
+        font-weight: map-get($font-weights, bold);
+        color: $home-color;
+        @include media-breakpoint-between(md,
+        lg) {
+            font-size: 46px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 44px;
+        }
+    }
+    .subheading1-home {
+        font-size: 24px;
+        color: $home-color;
+        @include media-breakpoint-down(md) {
+            font-size: 19px;
+        }
+    }
+    .subheading2-home {
+        font-size: 24px;
+        color: white;
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
+    }
+    .btn-home {
+        margin-top: 80px;
+        @include media-breakpoint-down(md) {
+            margin-top: 50px;
+        }
+    }
+}
+
+.services {
+    .card {
+        border: 2px solid $first-color;
+        &:hover {
+            background-color: $grey;
+        }
+    }
+    .card-name {
+        font-size: 50px;
+        color: $first-color;
+    }
+}
+
+.awards {
+    img {
+        width: 70%;
+    }
+    @include media-breakpoint-down(md) {
+        img {
+            width: 60%;
+        }
+    }
+}
+
+// FOOTER CSS
+.footer {
+    background: $black;
+    border-radius: 50px 50px 0px 0px;
+    color: white;
+    padding: 60px 0px;
+    h3 {
+        font-size: 22px;
+        font-weight: map-get($font-weights, semibold);
+    }
+    ul {
+        padding: 0;
+        margin-top: 20px;
+        li {
+            margin: 20px 0;
+        }
+    }
+    .quote {
+        font-size: 20px;
+    }
+    .credit {
+        font-size: 12px;
+        padding-bottom: 0;
+    }
+}
