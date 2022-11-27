@@ -129,6 +129,11 @@
   }
 }
 
+.anchor {
+  padding-top: 150px;
+  margin-top: -150px;
+}
+
 .home {
   background-image: url("hero-bg.png");
   height: 100%;
@@ -212,6 +217,10 @@
   }
 }
 
+.traction h1 {
+  color: #8EA73E;
+}
+
 .footer {
   background: #1B1919;
   border-radius: 50px 50px 0px 0px;
@@ -219,18 +228,36 @@
   padding: 60px 0px;
 }
 
+.footer a:link {
+  color: white;
+}
+
 .footer h3 {
   font-size: 22px;
   font-weight: 600;
 }
 
+.footer .foot-link {
+  margin: 20px 0;
+  color: white;
+  list-style: none;
+}
+
 .footer ul {
   padding: 0;
   margin-top: 20px;
+  margin: 20px 0;
+}
+
+.footer ul a:link {
+  color: white !important;
+  text-decoration: none;
 }
 
 .footer ul li {
   margin: 20px 0;
+  color: white;
+  list-style: none;
 }
 
 .footer .quote {
@@ -239,6 +266,6 @@
 
 .footer .credit {
   font-size: 12px;
-  padding-bottom: 0;
+  padding-bottom: -100px;
 }
 /*# sourceMappingURL=main.css.map */
