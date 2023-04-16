@@ -12,6 +12,9 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="assets/style/main.css">
 
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <title>Harverse</title>
 </head>
 
@@ -101,7 +104,7 @@
     </section>
 
     <!-- TRACTION -->
-    <div class="traction comodities section-margin bg-light py-5">
+    <div class="tractions section-margin bg-light py-5">
         <div class="container">
             <div class="row text-center">
                 <div class="col-12">
@@ -111,31 +114,69 @@
                     <h5 class="label-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col-lg-4">
-                    <div class="prod1 text-center">
-                        <img src="assets/images/weights-icon.png" alt="">
-                        <h3 class="mt-4">3000 KG</h3>
+
+            <div class="card-row row row-cols-3 mt-5 row-cols-md-2 g-4">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/images/traction-farmers.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">60 +</h5>
+                                <p class="card-text">Farmers.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="prod1 text-center">
-                        <img src="assets/images/farmer-icon.png" alt="">
-                        <h3 class="mt-4">60 Farmer</h3>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/images/traction-supplied.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">3000 +</h5>
+                                <p class="card-text">Supplied in(Kg)</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="prod1 text-center">
-                        <img src="assets/images/country-icon.png" alt="">
-                        <h3 class="mt-4">3 Country</h3>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/images/traction-commodity.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">5 +</h5>
+                                <p class="card-text">Commodity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/images/traction-country.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">3 +</h5>
+                                <p class="card-text">Country.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </div>
 
     <!-- COMMODITIES -->
-    <div class="section comodities section-margin">
+    <div class="commodities section-margin">
         <div class="container anchor" id="products">
             <div class="row text-center">
                 <div class="col-12">
@@ -145,54 +186,221 @@
                     <h5 class="label-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col-lg-4">
-                    <div class="prod1 text-center">
-                        <img src="assets/images/corpa-product.png" alt="">
-                        <h3>Copra</h3>
+
+            <div class="swiper mySwiper card-row row row-card mt-5 justify-content-center">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide col-lg-3 col-md-8 mt-4 mt-lg-0">
+                        <div class="card text-center">
+                            <img src="assets/images/commodity-coffee.png" class="card-img-top" alt="...">
+                            <div class="card-body py-4 px-5 justify-content-center">
+                                <h5 class="card-name">Coffee</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-lg-3 col-md-8 mt-4 mt-lg-0">
+                        <div class="card text-center">
+                            <img src="assets/images/commodity-seaweed.png" class="card-img-top" alt="...">
+                            <div class="card-body py-4 px-5 justify-content-center">
+                                <h5 class="card-name">Seaweed</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-lg-3 col-md-8 mt-4 mt-lg-0">
+                        <div class="card text-center">
+                            <img src="assets/images/commodity-charcoal.png" class="card-img-top" alt="...">
+                            <div class="card-body py-4 px-5 justify-content-center">
+                                <h5 class="card-name">Charcoal</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-lg-3 col-md-8 mt-4 mt-lg-0">
+                        <div class="card text-center">
+                            <img src="assets/images/commodity-coconut.png" class="card-img-top" alt="...">
+                            <div class="card-body py-4 px-5 justify-content-center">
+                                <h5 class="card-name">Coconut</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide col-lg-3 col-md-8 mt-4 mt-lg-0">
+                        <div class="card text-center">
+                            <img src="assets/images/commodity-bricket.png" class="card-img-top" alt="...">
+                            <div class="card-body py-4 px-5 justify-content-center">
+                                <h5 class="card-name">Bricket</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="prod1 text-center">
-                        <img src="assets/images/greenbean-product.png" alt="">
-                        <h3>Coffee Bean</h3>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="prod1 text-center">
-                        <img src="assets/images/binchotan-product.png" alt="">
-                        <h3>Binchotan</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-12">
-                    <a href="https://wa.me/6285156077857" target="_blank" class="btn-first mt-5 d-inline-block">Get Free Sample</a>
-                </div>
+                <div class="swiper-pagination "></div>
             </div>
         </div>
     </div>
 
     <!-- TESTIMONY -->
     <section class="testimony section-margin bg-light py-5">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md-6">
-                    <h1 class="heading-section">
-                        " Harverse Hendle Coffee Supply for my Cafe "
-                    </h1>
-                    <p class="subheading-section mt-3">
-                        Atras Farhan ( Founder Ngalub Cafe & Co-Work space)
-                    </p>
-                    <a href="https://wa.me/6285156077857" target="_blank" class="btn-first mt-5 d-inline-block">Get Free Sample</a>
+        <div class="container anchor" id="testimony">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="label-section">What we do?</h1>
                 </div>
-                <div class="col-md-6 text-end">
-                    <img src="assets/images/testimony.png" class="img-fluid" alt="" width="70%">
+                <div class="col-12">
+                    <h5 class="label-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+                </div>
+            </div>
+
+            <div class="card-row row row-cols-3 mt-5 row-cols-md-1 g-4">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <img src="assets/images/testimony-avatar.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Nadila Zahro</h6>
+                                    <h9 class="card-text">Director at Reneo.id</h9>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <img src="assets/images/testimony-avatar.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Nadila Zahro</h6>
+                                    <h9 class="card-text">Director at Reneo.id</h9>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <img src="assets/images/testimony-avatar.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Nadila Zahro</h6>
+                                    <h9 class="card-text">Director at Reneo.id</h9>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <img src="assets/images/testimony-avatar.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Nadila Zahro</h6>
+                                    <h9 class="card-text">Director at Reneo.id</h9>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- ARTICLES -->
+    <div class="articles section-margin">
+        <div class="container anchor" id="articles">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="label-section">Harverse Articles</h1>
+                </div>
+                <div class="col-12">
+                    <h5 class="label-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+                </div>
+            </div>
+            <div class="card-row row row-cols-3 mt-5 row-cols-md-2 g-4">
+                <div class="col-lg-3 col-md-8 mt-4 mt-lg-0">
+                    <div class="card text-bg-dark">
+                        <img src="assets/images/articles-test.png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h3 class="card-title">Komoditas-Komoditas Indonesia Yang Berpotensi Untuk Diekspor</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-8 mt-4 mt-lg-0">
+                    <div class="card text-bg-dark">
+                        <img src="assets/images/articles-test.png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h3 class="card-title">Komoditas-Komoditas Indonesia Yang Berpotensi Untuk Diekspor</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-8 mt-4 mt-lg-0">
+                    <div class="card text-bg-dark">
+                        <img src="assets/images/articles-test.png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h3 class="card-title">Komoditas-Komoditas Indonesia Yang Berpotensi Untuk Diekspor</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
-    </section>
+    </div>
+
+
+    <!-- JOIN US -->
+    <div class="join-us section-margin ">
+        <div class="container anchor" id="articles">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="label-section text-light">Join Our Ecosystem</h1>
+                </div>
+            </div>
+            <div class="card-row row row-cols-3 mt-5 row-cols-md-2 g-4">
+                <div class="col-lg-3 col-md-8 mt-4 mt-lg-0">
+                    <div class="card">
+                        <img src="assets/images/join-us1.png" class="card-img" alt="...">
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-8 mt-4 mt-lg-0">
+                    <div class="card">
+                        <img src="assets/images/join-us2.png" class="card-img" alt="...">
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-8 mt-4 mt-lg-0">
+                    <div class="card">
+                        <img src="assets/images/join-us3.png" class="card-img" alt="...">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-5 mb-1">
+                <div class="col-12">
+                    <h5 class="label-section text-light">Harverse opens up the opportunities for the farmer, business owner, franchise, and others who willing to be involved in advancing the Indonesia commodity.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- FOOTER -->
     <footer class="footer section-margin">
@@ -243,6 +451,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
     <script src="assets/script/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
