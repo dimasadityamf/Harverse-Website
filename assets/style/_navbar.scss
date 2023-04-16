@@ -15,4 +15,10 @@
             color: $first-color;
         }
     }
+    .nav-link:hover {
+        color: #8EA73E;
+        /* set the color of the link when the user hovers over it */
+        text-decoration: underline;
+        /* add an underline when the user hovers over it */
+    }
 }
