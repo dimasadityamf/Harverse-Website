@@ -11,11 +11,11 @@
 
 .btn-first {
     @extend .btn-master;
-    background-color: $button-color;
+    background-color: $second-color;
     color: #fff;
     &:hover {
-        background-color: $first-color;
-        color: rgb(179, 179, 179);
+        background-color: $button-color;
+        color: white;
     }
 }
 

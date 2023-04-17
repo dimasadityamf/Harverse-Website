@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 .btn-master, .btn-first, .btn-second {
   padding: 15px 30px;
   border-radius: 50px;
@@ -20,13 +20,13 @@
 }
 
 .btn-first:hover {
-  background-color: #1A440C;
-  color: #b3b3b3;
+  background-color: #C0D679;
+  color: white;
 }
 
 .btn-second {
-  border: 2px solid #8EA73E;
-  color: #8EA73E;
+  border: 2px solid #C0D679;
+  color: #C0D679;
 }
 
 .navbar {
@@ -43,7 +43,6 @@
 
 .navbar .nav-link {
   margin-right: 20px;
-  font-weight: 500;
   color: white !important;
 }
 
@@ -77,17 +76,17 @@
 }
 
 .btn-first:hover {
-  background-color: #1A440C;
-  color: #b3b3b3;
+  background-color: #C0D679;
+  color: white;
 }
 
 .btn-second {
-  border: 2px solid #8EA73E;
-  color: #8EA73E;
+  border: 2px solid #C0D679;
+  color: #C0D679;
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   list-style: none;
   text-decoration: none;
   -webkit-transition: .3s ease-in-out all;
@@ -103,13 +102,19 @@
 }
 
 .section-margin {
-  margin-top: 180px;
+  margin-top: 150px;
 }
 
 .label-section {
   font-weight: 700;
   font-size: 48;
-  color: #1A440C;
+  color: #212121;
+}
+
+.sublabel-section {
+  font-weight: 600;
+  font-size: 48;
+  color: #4D4D4D;
 }
 
 .heading-section {
@@ -206,6 +211,7 @@
   border-radius: 24px;
   width: 370px;
   height: 360px;
+  border: 0;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -226,14 +232,20 @@
   margin: -130px;
 }
 
-.services .card-img {
-  border-radius: 24px;
+.services .card img {
+  border-radius: 24px 24px 0 0;
 }
 
 .services .card-name {
-  position: absolute;
+  position: center;
+  padding-top: 15px;
   font-size: 20px;
   color: #1A440C;
+  font-weight: 600;
+}
+
+.tractions {
+  padding: 150px 0;
 }
 
 .tractions .card {
@@ -241,10 +253,12 @@
   border-radius: 16px;
   width: 305px;
   height: 130px;
+  border: 0;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #F7FBE9;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 30px;
 }
 
 .tractions .card-row {
@@ -259,17 +273,36 @@
   margin: -20px;
 }
 
+.tractions .card-title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: -5px;
+}
+
+.tractions .card-text {
+  font-weight: 600;
+  color: #4D4D4D;
+  margin-top: -5px;
+}
+
 .commodities .card {
   position: relative;
   border-radius: 24px;
   width: 305px;
-  height: 396px;
+  height: 380px;
+  border: 0;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .commodities .card:hover {
-  background-color: #F5F5F5;
+  background-color: #F5FFD6;
+  -webkit-box-shadow: 0 2px 4px #8EA73E;
+          box-shadow: 0 2px 4px #8EA73E;
+}
+
+.commodities .card:hover .card-name {
+  color: #8EA73E;
 }
 
 .commodities .card-row {
@@ -284,14 +317,26 @@
   margin: -20px;
 }
 
-.commodities .card-img {
-  border-radius: 24px;
+.commodities .card img {
+  padding: 15px;
+  padding-top: 20px;
 }
 
 .commodities .card-name {
-  position: absolute;
-  font-size: 20px;
+  position: center;
+  padding-top: 10px;
+  font-size: 30px;
   color: #1A440C;
+  font-weight: 700;
+}
+
+.commodities .swiper {
+  width: 100%;
+  height: 150%;
+}
+
+.testimony {
+  padding: 150px 0;
 }
 
 .testimony .card {
@@ -299,6 +344,9 @@
   border-radius: 12px;
   width: 522px;
   height: 184px;
+  border: 0;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #F7FBE9;
   padding: 15px;
 }
@@ -324,6 +372,7 @@
   border-radius: 16px;
   width: 413px;
   height: 233px;
+  border: 0;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #F7FBE9;
@@ -366,6 +415,7 @@
   border-radius: 16px;
   width: 384px;
   height: 384px;
+  border: 0;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #F7FBE9;

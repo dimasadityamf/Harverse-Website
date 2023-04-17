@@ -2,7 +2,7 @@
 @import "colors";
 @import "button";
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     list-style: none;
     text-decoration: none;
     transition: .3s ease-in-out all;
@@ -16,13 +16,19 @@
 }
 
 .section-margin {
-    margin-top: 180px;
+    margin-top: 150px;
 }
 
 .label-section {
     font-weight: map-get($font-weights, bold);
     font-size: 48;
-    color: $first-color;
+    color: $neutral-black;
+}
+
+.sublabel-section {
+    font-weight: map-get($font-weights, semibold);
+    font-size: 48;
+    color: $neutral-grey;
 }
 
 .heading-section {
@@ -99,6 +105,7 @@
         border-radius: 24px;
         width: 370px;
         height: 360px;
+        border: 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         &:hover {
             background-color: $grey;
@@ -110,33 +117,47 @@
         justify-content: space-between;
         margin: -130px;
     }
-    .card-img {
-        border-radius: 24px;
+    .card img {
+        border-radius: 24px 24px 0 0;
     }
     .card-name {
-        position: absolute;
+        position: center;
+        padding-top: 15px;
         font-size: 20px;
         color: $first-color;
+        font-weight: map-get($font-weights, semibold);
     }
 }
 
 // TRACTION
 .tractions {
+    padding: 150px 0;
     .card {
         position: relative;
         border-radius: 16px;
-        // border: 2px solid $first-color;
         width: 305px;
         height: 130px;
+        border: 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         background-color: #F7FBE9;
-        padding: 20px;
+        padding-top: 20px;
+        padding-left: 30px;
     }
     .card-row {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: -20px;
+    }
+    .card-title {
+        font-weight: map-get($font-weights, bold);
+        font-size: 30px;
+        margin-top: -5px;
+    }
+    .card-text {
+        font-weight: map-get($font-weights, semibold);
+        color: $neutral-grey;
+        margin-top: -5px;
     }
 }
 
@@ -145,12 +166,16 @@
     .card {
         position: relative;
         border-radius: 24px;
-        // border: 2px solid $first-color;
         width: 305px;
-        height: 396px;
+        height: 380px;
+        border: 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         &:hover {
-            background-color: $grey;
+            background-color: $home-color;
+            box-shadow: 0 2px 4px $second-color;
+            .card-name {
+                color: $second-color;
+            }
         }
     }
     .card-row {
@@ -159,25 +184,34 @@
         justify-content: space-between;
         margin: -20px;
     }
-    .card-img {
-        border-radius: 24px;
+    .card img {
+        //border-radius: 24px 24px 0 0;
+        padding: 15px;
+        padding-top: 20px;
     }
     .card-name {
-        position: absolute;
-        font-size: 20px;
+        position: center;
+        padding-top: 10px;
+        font-size: 30px;
         color: $first-color;
+        font-weight: map-get($font-weights, bold);
+    }
+    .swiper {
+        width: 100%;
+        height: 150%;
     }
 }
 
 // TESTIMONY
 .testimony {
+    padding: 150px 0;
     .card {
         position: relative;
         border-radius: 12px;
-        // border: 2px solid $first-color;
         width: 522px;
         height: 184px;
-        //box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        border: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         background-color: #F7FBE9;
         padding: 15px;
     }
@@ -188,8 +222,6 @@
         justify-content: center;
         align-content: center;
         display: flex;
-        //flex-wrap: wrap;
-        //flex-wrap: wrap;
     }
 }
 
@@ -200,6 +232,7 @@
         border-radius: 16px;
         width: 413px;
         height: 233px;
+        border: 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         background-color: #F7FBE9;
         transition: transform 0.3s ease-in-out;
@@ -213,10 +246,8 @@
     .card-row {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        //grid-row-gap: 50px;
         justify-content: center;
         align-content: center;
-        //display: flex;
     }
 }
 
@@ -231,6 +262,7 @@
         border-radius: 16px;
         width: 384px;
         height: 384px;
+        border: 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         background-color: #F7FBE9;
     }
