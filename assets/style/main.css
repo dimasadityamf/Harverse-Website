@@ -117,6 +117,11 @@
     text-decoration: none;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1344px;
 }
@@ -392,6 +397,15 @@
     display: flex;
 }
 
+.testimony .card-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimony .flex-col3 {
+    margin-top: 0px;
+}
+
 .articles .card {
     position: relative;
     border-radius: 16px;
@@ -512,9 +526,15 @@
 }
 
 @media (max-width: 500px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
     .services .card {
         margin-left: auto;
         margin-right: auto;
+        width: 325px;
+        height: 315px;
     }
     .tractions .card {
         margin-left: auto;
@@ -525,20 +545,26 @@
         align-items: center;
     }
     .testimony .card {
-        width: 362px;
+        width: 312px;
         height: 184px;
         margin-left: auto;
         margin-right: auto;
     }
+    .testimony .flex-col3 {
+        margin-top: -8px;
+    }
     .articles .card {
-        width: 383px;
-        height: 203px;
+        width: 330px;
+        height: 180px;
     }
     .articles .card-row {
         grid-template-columns: repeat(1, 1fr);
         margin-left: auto;
         margin-right: auto;
     }
+    /* .join-us {
+        data-aos-anchor-placement: top-bottom
+    } */
     .join-us .card-row {
         grid-template-columns: repeat(1, 1fr);
         margin-left: auto;
