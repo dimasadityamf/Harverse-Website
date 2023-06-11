@@ -29,8 +29,8 @@
 }
 
 .btn-second {
-    background-color: #8EA73E;
-    color: #fff;
+    background-color: white;
+    color: #C0D679;
 }
 
 .btn-second:hover {
@@ -52,21 +52,18 @@
 
 .navbar .nav-link {
     margin-right: 20px;
-    color: white;
+    color: white !important;
     -webkit-transition: all .55s ease;
     transition: all .55s ease;
 }
 
 .navbar .nav-link.active {
-    margin-right: 20px;
-    color: white;
-    -webkit-transition: all .55s ease;
-    transition: all .55s ease;
+    font-weight: 600;
+    color: #1A440C;
 }
 
 .navbar .nav-link:hover {
     color: #8EA73E;
-    font-weight: 500;
     /* set the color of the link when the user hovers over it */
     text-decoration: underline;
     /* add an underline when the user hovers over it */
@@ -100,7 +97,7 @@
 
 .btn-second {
     background-color: white;
-    color: #8EA73E;
+    color: #C0D679;
 }
 
 .btn-second:hover {
@@ -308,6 +305,11 @@
     margin-top: -5px;
 }
 
+.tractions .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .commodities .card {
     position: relative;
     border-radius: 24px;
@@ -417,7 +419,7 @@
 .articles .card-row {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(3, 1fr);
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -451,7 +453,7 @@
 .join-us .card-row {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(3, 1fr);
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -509,5 +511,37 @@
     padding-bottom: -100px;
 }
 
-
-/*# sourceMappingURL=main.css.map */
+@media (max-width: 500px) {
+    .services .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tractions .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tractions .row {
+        display: flex;
+        align-items: center;
+    }
+    .testimony .card {
+        width: 362px;
+        height: 184px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .articles .card {
+        width: 383px;
+        height: 203px;
+    }
+    .articles .card-row {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .join-us .card-row {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
