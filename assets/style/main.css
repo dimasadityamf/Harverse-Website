@@ -526,10 +526,10 @@ body {
 }
 
 @media (max-width: 500px) {
-    html,
+    /* html,
     body {
         overflow-x: hidden;
-    }
+    } */
     .services .card {
         margin-left: auto;
         margin-right: auto;
@@ -562,9 +562,6 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-    /* .join-us {
-        data-aos-anchor-placement: top-bottom
-    } */
     .join-us .card-row {
         grid-template-columns: repeat(1, 1fr);
         margin-left: auto;
