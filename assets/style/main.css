@@ -173,12 +173,17 @@ body {
 
 .home {
     background-image: url("hero-bg3.png");
-    height: 100%;
+    /* height: 100%; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 290px;
+    align-items: center;
     height: 100vh;
+    display: flex;
+}
+
+.home .container {
+    margin: 0 auto;
 }
 
 .home .heading-home {
@@ -526,10 +531,16 @@ body {
 }
 
 @media (max-width: 500px) {
-    /* html,
+    html,
     body {
         overflow-x: hidden;
-    } */
+    }
+    .navbar.active {
+        padding: 10px 0;
+    }
+    .navbar img {
+        height: 40px;
+    }
     .services .card {
         margin-left: auto;
         margin-right: auto;
@@ -562,9 +573,13 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+    .join-us .card {
+        width: 234px;
+        height: 234px;
+    }
     .join-us .card-row {
         grid-template-columns: repeat(1, 1fr);
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 50%;
+        margin-right: 50%;
     }
 }
