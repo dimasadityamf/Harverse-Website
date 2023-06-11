@@ -88,7 +88,8 @@ section {
 
 /* responsive */
 
-@media screen and (max-width: 850px) {
+
+/*@media screen and (max-width: 850px) {
     .navbar .navbar-wrapper .menu-link {
         font-family: var(--main-font);
         font-size: 0.7rem;
@@ -119,4 +120,4 @@ section {
     .navbar .navbar-wrapper .icon-menu {
         display: initial;
     }
-}
+}*/
