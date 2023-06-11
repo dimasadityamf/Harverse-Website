@@ -407,7 +407,7 @@
     <footer class="footer section-margin">
         <div class="container" id="contact">
             <div class="row ">
-                <div class="col-lg-4 col-md-6">
+                <div class="col col-lg-4 col-md-6">
                     <a href="#home"><img src="assets/images/harverse-logo-white.png" alt=""></a>
                     <div class="location d-flex align-items-center">
                         <a href="https://goo.gl/maps/Pq7Kboxq7qUVYHfb9" target="_blank"><img src="assets/images/location-icon.png" alt=""></a>
@@ -418,7 +418,7 @@
                         <p class="ms-2">(+62) 851 5607 7857</p>
                     </div>
                     <div class="phone d-flex align-items-center">
-                        <a href="https://wa.me/6285156077857" target="_blank"><img src="assets/images/phone-icon.png" alt=""></a>
+                        <a href="mailto:letharverse@gmail.com" target="_blank"><img src="assets/images/mail-icon.png" alt=""></a>
                         <p class="ms-2">letharverse@gmail.com</p>
                     </div>
                     <div class="sosmed mt-5">
@@ -429,7 +429,7 @@
                     </div>
                 </div>
                 <div class="col-lg-1 mt-5 ms-5 col-md-3">
-                    <h3><a class="foot-link" href="#home">Follow Us</a></h3>
+                    <h3><a class="foot-link" href="#home">Home</a></h3>
                     <ul>
                         <li><a class="foot-link" href="#about">About</a></li>
                         <li><a class="foot-link" href="#services">Services</a></li>
@@ -437,10 +437,10 @@
                         <li><a class="foot-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="quote col-lg-3 my-auto mx-4 col-md-1">
+                <div class="quote col-lg-3 my-auto mx-4 col-md-1 quuote">
                     <p>Make Your Supplies Plan More Sensible</p>
                 </div>
-                <div class="col-lg-3 col-md-1 ">
+                <div class="col-lg-3 col-md-1 blogo">
                     <img src="assets/images/harverse-icon.png" alt="" width="100%">
                 </div>
 
@@ -473,6 +473,16 @@
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                500: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                }
             },
         });
     </script>

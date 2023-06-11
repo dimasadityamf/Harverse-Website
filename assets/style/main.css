@@ -487,6 +487,7 @@ body {
     color: white;
     padding: 60px 0px;
     margin-top: -50px;
+    display: flex;
 }
 
 .footer a:link {
@@ -581,5 +582,25 @@ body {
         grid-template-columns: repeat(1, 1fr);
         margin-left: 50%;
         margin-right: 50%;
+    }
+    .footer .sosmed {
+        padding-left: 25vw;
+    }
+    .footer .foot-link {
+        padding-left: auto;
+        padding-right: auto;
+    }
+    .quote .p {
+        font-size: 50px;
+    }
+    .footer .blogo {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .commodities .swiper {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 7%;
     }
 }
