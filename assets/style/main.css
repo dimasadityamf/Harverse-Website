@@ -490,6 +490,10 @@ body {
     display: flex;
 }
 
+.footer .row2 {
+    margin-top: 3rem;
+}
+
 .footer a:link {
     color: white;
 }
@@ -497,10 +501,10 @@ body {
 .footer h3 {
     font-size: 22px;
     font-weight: 600;
+    padding-top: 30px;
 }
 
 .footer .foot-link {
-    margin: 20px 0;
     color: white;
     list-style: none;
 }
@@ -524,6 +528,14 @@ body {
 
 .footer .quote {
     font-size: 20px;
+}
+
+.footer .blogo {
+    margin-left: 3rem;
+}
+
+.footer .blogop {
+    text-align: center
 }
 
 .footer .credit {
@@ -583,8 +595,14 @@ body {
         margin-left: 50%;
         margin-right: 50%;
     }
+    .footer {
+        border-radius: 20px 20px 0px 0px;
+    }
+    .footer .row2 {
+        margin-top: -1px;
+    }
     .footer .sosmed {
-        padding-left: 25vw;
+        padding-left: 22vw;
     }
     .footer .foot-link {
         padding-left: auto;
@@ -595,6 +613,7 @@ body {
     }
     .footer .blogo {
         width: 50%;
+        padding-top: 45px;
         margin-left: auto;
         margin-right: auto;
     }
