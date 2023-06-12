@@ -1,2 +1,3 @@
 RewriteEngine On
-RewriteRule ^about$ about.html [L]
+RewriteCond %{about} !-d
+RewriteRule ^([^.]+)$ $1.html [NC,L]
