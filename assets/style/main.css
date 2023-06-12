@@ -196,10 +196,16 @@ body {
     .home .heading-home {
         font-size: 46px;
     }
+    .about .heading-about {
+        font-size: 46px;
+    }
 }
 
 @media (max-width: 575.98px) {
     .home .heading-home {
+        font-size: 44px;
+    }
+    .about .heading-about {
         font-size: 44px;
     }
 }
@@ -209,8 +215,16 @@ body {
     color: #F5FFD6;
 }
 
+.about .subheading1-about {
+    font-size: 24px;
+    color: #F5FFD6;
+}
+
 @media (max-width: 767.98px) {
     .home .subheading1-home {
+        font-size: 19px;
+    }
+    .about .subheading1-about {
         font-size: 19px;
     }
 }
@@ -220,8 +234,16 @@ body {
     color: white;
 }
 
+.about .subheading2-about {
+    font-size: 24px;
+    color: white;
+}
+
 @media (max-width: 767.98px) {
     .home .subheading2-home {
+        font-size: 16px;
+    }
+    .about .subheading2-about {
         font-size: 16px;
     }
 }
@@ -230,10 +252,38 @@ body {
     margin-top: 80px;
 }
 
+.about .btn-about {
+    margin-top: 80px;
+}
+
 @media (max-width: 767.98px) {
     .home .btn-home {
         margin-top: 50px;
     }
+    .about .btn-about {
+        margin-top: 50px;
+    }
+}
+
+.about {
+    background-image: url("about-bg.png");
+    /* height: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+}
+
+.about .container {
+    margin: 0 auto;
+}
+
+.about .heading-about {
+    font-size: 62px;
+    font-weight: 700;
+    color: #F5FFD6;
 }
 
 .services .card {
