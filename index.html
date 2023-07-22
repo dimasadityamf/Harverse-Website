@@ -491,9 +491,37 @@
     </script>
 
     <div class="alert hide">
-        <span class="fas fa-exclamation-circle"></span>
-        <span class="msg">Website is under maintenance!</span>
+        <div class="content">
+            <span class="fas fa-exclamation-circle"></span>
+            <span class="msg">Website is under maintenance!</span>
+        </div>
     </div>
+
+    <script>
+        function isScrollNearBottom() {
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const nearBottomThreshold = 100; // Adjust this value as needed
+
+            return scrollTop + windowHeight >= documentHeight - nearBottomThreshold;
+        }
+
+        function toggleAlertVisibility() {
+            const alertElement = document.querySelector('.alert');
+            if (isScrollNearBottom()) {
+                alertElement.classList.add('hide');
+            } else {
+                alertElement.classList.remove('hide');
+            }
+        }
+
+        // Check and toggle the visibility on initial load
+        toggleAlertVisibility();
+
+        // Add an event listener to the scroll event
+        window.addEventListener('scroll', toggleAlertVisibility);
+    </script>
 
     <div class="popup">
         <div class="popup-content">
@@ -519,6 +547,8 @@
             popup.childNodes[1].classList.remove('showPopup');
         })
     </script>
+
+
 </body>
 
 </html>

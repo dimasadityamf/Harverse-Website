@@ -753,9 +753,20 @@ body {
     z-index: 2;
 }
 
-.alert span {
-    margin-left: auto;
-    margin-right: auto;
+.alert .content {
+    display: flex;
+    align-items: center;
+    /* Add spacing between elements */
+}
+
+.alert .content .fas {
+    margin-right: 10px;
+}
+
+.alert .content .msg {
+    text-align: center;
+    flex: 1;
+    /* Let the message take the available space */
 }
 
 .alert.showAlert {
@@ -787,5 +798,13 @@ body {
         left: 0;
         border-left: none;
         border-radius: 0;
+        padding: 20px 10px;
+    }
+    .alert .content {
+        display: flex;
+        /* Center the content vertically */
+        flex-direction: column;
+        align-items: center;
+        /* Center the text horizontally */
     }
 }
