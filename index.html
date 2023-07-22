@@ -18,6 +18,8 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <title>Harverse</title>
 </head>
 
@@ -42,6 +44,8 @@
             </div>
         </div>
     </nav>
+
+
 
     <!-- HOME -->
     <section class="home" id="home">
@@ -445,6 +449,10 @@
             </div>
     </footer>
 
+
+
+
+
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -480,6 +488,36 @@
                 }
             },
         });
+    </script>
+
+    <div class="alert hide">
+        <span class="fas fa-exclamation-circle"></span>
+        <span class="msg">Website is under maintenance!</span>
+    </div>
+
+    <div class="popup">
+        <div class="popup-content">
+            <i class="fas fa-times close-btn"></i>
+            <h2>Website Maintenance</h2>
+            <p>Website is under maintenance for while. We are sorry if some content and services will not available for this time. Please contact us for more our information.</p>
+            <div class="btn-home text-center text-lg-start pt-4">
+                <a href="https://wa.me/6285156077857" target="_blank" class="btn-first">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const popup = document.querySelector('.popup');
+        const x = document.querySelector('.popup-content i')
+
+        window.addEventListener('load', () => {
+            popup.classList.add('showPopup');
+            popup.childNodes[1].classList.add('showPopup');
+        })
+        x.addEventListener('click', () => {
+            popup.classList.remove('showPopup');
+            popup.childNodes[1].classList.remove('showPopup');
+        })
     </script>
 </body>
 

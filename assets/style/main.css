@@ -680,3 +680,112 @@ body {
         width: 100%;
     }
 }
+
+.popup {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(2.5px);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out opacity;
+    z-index: 2;
+}
+
+.popup-content {
+    width: clamp(300px, 90vw, 500px);
+    background-color: #fff;
+    padding: clamp(1.5rem, 100vw, 3rem);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 200ms ease-in-out opacity, 200ms ease-in-out transform;
+    position: relative;
+}
+
+.popup h1 {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    line-height: 2;
+    cursor: pointer;
+    user-select: none;
+}
+
+.popup h1:active {
+    transform: scale(.9);
+}
+
+.close-btn {
+    position: absolute;
+    font-size: 1.4em;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    transition-property: opacity;
+}
+
+.showPopup {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.alert {
+    background: #fff;
+    box-shadow: -1px 0 5px rgba(0, 0, 0, .5);
+    padding: 20px 70px;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    border-radius: 4px;
+    border-left: 8px solid #8EA73E;
+    z-index: 2;
+}
+
+.alert span {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alert.showAlert {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.alert.show {
+    animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+    0% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(-10%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+@media (max-width: 500px) {
+    .alert {
+        left: 0;
+        border-left: none;
+        border-radius: 0;
+    }
+}
