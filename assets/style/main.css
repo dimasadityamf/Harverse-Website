@@ -4,7 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 .btn-master,
 .btn-first,
-.btn-second {
+.btn-second,
+.btn-third {
     padding: 15px 30px;
     border-radius: 50px;
     font-weight: 600;
@@ -13,7 +14,8 @@
 @media (max-width: 575.98px) {
     .btn-master,
     .btn-first,
-    .btn-second {
+    .btn-second,
+    .btn-third {
         padding: 10px 20px;
     }
 }
@@ -34,6 +36,18 @@
 }
 
 .btn-second:hover {
+    background-color: #C0D679;
+    color: white;
+}
+
+.btn-third {
+    background-color: white;
+    color: #C0D679;
+    border-style: solid;
+    border-color: #C0D679;
+}
+
+.btn-third:hover {
     background-color: #C0D679;
     color: white;
 }
@@ -71,7 +85,7 @@
 
 .btn-master,
 .btn-first,
-.btn-second {
+.btn-second .btn-third {
     padding: 15px 30px;
     border-radius: 50px;
     font-weight: 600;
@@ -80,7 +94,7 @@
 @media (max-width: 575.98px) {
     .btn-master,
     .btn-first,
-    .btn-second {
+    .btn-second .btn-third {
         padding: 10px 20px;
     }
 }
@@ -296,8 +310,27 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.content-hover {
+    transform: scale(0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #252525;
+    // box-shadow: inset 0 0 0 15px #1B1B1B;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 2em 2em;
+}
+
 .services .card:hover {
     background-color: #F5F5F5;
+    .content-hover,
+    {
+        transform: scale(1, 1);
+        cursor: pointer;
+    }
 }
 
 .services .card-row {
@@ -378,12 +411,14 @@ body {
     border: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 2s ease-out;
 }
 
 .commodities .card:hover {
     background-color: #F5FFD6;
     -webkit-box-shadow: 0 2px 4px #8EA73E;
     box-shadow: 0 2px 4px #8EA73E;
+    background: linear-gradient(180deg, #8EA73E, #fff 100%);
 }
 
 .commodities .card:hover .card-name {
@@ -415,20 +450,22 @@ body {
     font-weight: 700;
 }
 
-.commodities .swiper {
+
+/* .commodities .swiper {
     width: 100%;
     height: 150%;
-}
+} */
 
 .testimony {
     padding: 150px 0;
+    padding-top: -100px;
 }
 
 .testimony .card {
     position: relative;
     border-radius: 12px;
     width: 522px;
-    height: 184px;
+    height: 195px;
     border: 0;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -499,6 +536,10 @@ body {
 
 .join-us {
     background-color: #8EA73D;
+    background-image: url("eco-bg1.png");
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    background-position: ;
     color: white;
     padding-top: 80px;
     padding-bottom: 200px;
@@ -604,6 +645,26 @@ body {
     .navbar img {
         height: 40px;
     }
+    .standing .heading-section {
+        text-align: center
+    }
+    .standing .subheading-section {
+        text-align: center
+    }
+    .commodities .card {
+        margin-left: auto;
+        margin-right: auto;
+        width: 325px;
+        height: 315px;
+    }
+    .commodities .card img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .commodities .card-name {
+        margin-top: -40px;
+    }
     .services .card {
         margin-left: auto;
         margin-right: auto;
@@ -618,9 +679,15 @@ body {
         display: flex;
         align-items: center;
     }
+    .testimony img {
+        width: 90%;
+    }
+    .testimony .over {
+        font-size: 13px;
+    }
     .testimony .card {
         width: 312px;
-        height: 184px;
+        height: 250px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -667,11 +734,11 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-    .commodities .swiper {
+    /* .commodities .swiper {
         margin-left: auto;
         margin-right: auto;
         padding-left: 7%;
-    }
+    } */
     .visi {
         margin-left: 120px;
         margin-right: 120px;
